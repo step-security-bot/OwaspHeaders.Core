@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: bundler
+    directory: /docs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /example/OwaspHeaders.Core.Example
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /src
+    schedule:
+      interval: daily
+
+  - package-ecosystem: nuget
+    directory: /tests/OwaspHeaders.Core.Tests
+    schedule:
+      interval: daily
